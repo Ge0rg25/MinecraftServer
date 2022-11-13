@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 31.40.49.6
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1668292419089
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1668331630604
+  login: 1668331627454
+money: '0'
+last-account-name: BaggerFast
+lastlocation:
+  world: c96b8c17-c4be-4364-8d29-d44ceb76c7b4
+  world-name: world
+  x: -36.981535953032896
+  y: 36.38787665171683
+  z: -34.66632980950835
+  yaw: 76.3382568359375
+  pitch: 4.350203037261963
+logoutlocation:
+  world: c96b8c17-c4be-4364-8d29-d44ceb76c7b4
+  world-name: world
+  x: 21.188241344694344
+  y: 66.0
+  z: -21.619952532518482
+  yaw: -85.97855377197266
+  pitch: -2.8502163887023926
+homes:
+  home:
+    world: c96b8c17-c4be-4364-8d29-d44ceb76c7b4
+    world-name: world
+    x: 22.604076722189312
+    y: 66.0
+    z: -21.754899723422948
+    yaw: 136.63494873046875
+    pitch: -12.149810791015625
