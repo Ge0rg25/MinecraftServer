@@ -11,31 +11,31 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1668292419089
+  lastteleport: 1668350641417
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1668331630604
-  login: 1668331627454
+  logout: 1668351626737
+  login: 1668351582042
 money: '0'
 last-account-name: BaggerFast
 lastlocation:
   world: c96b8c17-c4be-4364-8d29-d44ceb76c7b4
   world-name: world
-  x: -36.981535953032896
-  y: 36.38787665171683
-  z: -34.66632980950835
-  yaw: 76.3382568359375
-  pitch: 4.350203037261963
+  x: 45.346396771897865
+  y: 76.0
+  z: -16.358544250190864
+  yaw: 102.14984130859375
+  pitch: 31.20003318786621
 logoutlocation:
   world: c96b8c17-c4be-4364-8d29-d44ceb76c7b4
   world-name: world
-  x: 21.188241344694344
-  y: 66.0
-  z: -21.619952532518482
-  yaw: -85.97855377197266
-  pitch: -2.8502163887023926
+  x: 29.80601277506187
+  y: 74.0
+  z: -7.628743876589395
+  yaw: 161.38551330566406
+  pitch: 57.75015640258789
 homes:
   home:
     world: c96b8c17-c4be-4364-8d29-d44ceb76c7b4

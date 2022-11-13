@@ -1,5 +1,17 @@
 [
   {
+    "uuid": "e6183ec6-6acd-3add-98d3-ff83eccbcd02",
+    "name": "BaggerFast",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "60f01074-fff8-3814-a802-7c451cc1c359",
+    "name": "Quni1337",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "13d64ff2-3d59-3907-b079-96b343c8c366",
     "name": "G1928",
     "level": 4,
