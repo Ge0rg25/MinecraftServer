@@ -1,79 +1,99 @@
-[11:50:37] [ServerMain/INFO]: Building unoptimized datafixer
-[11:50:38] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[11:50:40] [ServerMain/INFO]: Loaded 7 recipes
-[11:50:41] [Server thread/INFO]: Starting minecraft server version 1.19.2
-[11:50:41] [Server thread/WARN]: ****************************
-[11:50:41] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
-[11:50:41] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
-[11:50:41] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
-[11:50:41] [Server thread/WARN]: ****************************
-[11:50:41] [Server thread/INFO]: Loading properties
-[11:50:41] [Server thread/INFO]: This server is running Paper version git-Paper-270 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: e22dacf)
-[11:50:41] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[11:50:41] [Server thread/INFO]: Using 4 threads for Netty based IO
-[11:50:41] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[11:50:42] [Server thread/INFO]: Default game type: SURVIVAL
-[11:50:42] [Server thread/INFO]: Generating keypair
-[11:50:42] [Server thread/INFO]: Starting Minecraft server on *:25565
-[11:50:42] [Server thread/INFO]: Using epoll channel type
-[11:50:42] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[11:50:42] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[11:50:42] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.52
-[11:50:43] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+17-6e931b2
-[11:50:43] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[11:50:43] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.52
-[11:50:43] [Server thread/INFO]:         __    
-[11:50:43] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.52
-[11:50:43] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[11:50:43] [Server thread/INFO]: 
-[11:50:43] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[11:57:52] [Thread-0/INFO]: Stopping main thread (Ignore any thread death message you see! - DO NOT REPORT THREAD DEATH TO PAPER)
-[11:57:52] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[11:57:52] [Server thread/ERROR]: Error occurred while enabling LuckPerms v5.4.52 (Is it up to date?)
-java.lang.ThreadDeath: null
-	at java.lang.Thread.stop(Thread.java:942) ~[?:?]
-	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:926) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:808) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:898) ~[paper-1.19.2.jar:git-Paper-270]
-	at org.bukkit.craftbukkit.v1_19_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[paper-1.19.2.jar:git-Paper-270]
-[11:57:52] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.52
-[11:57:52] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[11:57:52] [Server thread/ERROR]: Error occurred while disabling LuckPerms v5.4.52 (Is it up to date?)
-java.lang.NullPointerException: Cannot invoke "me.lucko.luckperms.common.extension.SimpleExtensionManager.close()" because "this.extensionManager" is null
-	at me.lucko.luckperms.common.plugin.AbstractLuckPermsPlugin.disable(AbstractLuckPermsPlugin.java:264) ~[?:?]
-	at me.lucko.luckperms.bukkit.LPBukkitBootstrap.onDisable(LPBukkitBootstrap.java:193) ~[?:?]
-	at me.lucko.luckperms.bukkit.loader.BukkitLoaderPlugin.onDisable(BukkitLoaderPlugin.java:56) ~[LuckPerms.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:266) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:399) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:579) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:374) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin(CraftServer.java:565) ~[paper-1.19.2.jar:git-Paper-270]
-	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins(CraftServer.java:479) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:279) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-270]
-	at java.lang.Thread.run(Thread.java:833) ~[?:?]
-[11:57:52] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[11:57:52] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[11:57:52] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[11:57:52] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[11:57:52] [Server thread/INFO]: Preparing level "world"
-[11:57:52] [Server thread/ERROR]: Main thread terminated by WatchDog due to hard crash
-java.lang.ThreadDeath: null
-	at java.lang.Thread.stop(Thread.java:942) ~[?:?]
-	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:926) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:808) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:898) ~[paper-1.19.2.jar:git-Paper-270]
-	at org.bukkit.craftbukkit.v1_19_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[paper-1.19.2.jar:git-Paper-270]
-[11:57:52] [Thread-0/INFO]: Stopping server
-[11:57:52] [Thread-0/INFO]: Saving players
-[11:57:52] [Thread-0/WARN]: Asynchronous Save Players! Blocking thread until it returns 
-java.lang.IllegalStateException: null
-	at io.papermc.paper.util.MCUtil.ensureMain(MCUtil.java:361) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.players.PlayerList.saveAll(PlayerList.java:1248) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.players.PlayerList.saveAll(PlayerList.java:1244) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:954) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:808) ~[paper-1.19.2.jar:git-Paper-270]
-	at net.minecraft.server.MinecraftServer.close(MinecraftServer.java:898) ~[paper-1.19.2.jar:git-Paper-270]
-	at org.bukkit.craftbukkit.v1_19_R1.util.ServerShutdownThread.run(ServerShutdownThread.java:28) ~[paper-1.19.2.jar:git-Paper-270]
+[13:35:20] [ServerMain/INFO]: Building unoptimized datafixer
+[13:35:21] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[13:35:23] [ServerMain/INFO]: Loaded 7 recipes
+[13:35:24] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[13:35:24] [Server thread/INFO]: Loading properties
+[13:35:24] [Server thread/INFO]: This server is running Paper version git-Paper-270 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: e22dacf)
+[13:35:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:35:24] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:35:24] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[13:35:24] [Server thread/INFO]: Default game type: SURVIVAL
+[13:35:24] [Server thread/INFO]: Generating keypair
+[13:35:24] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:35:24] [Server thread/INFO]: Using default channel type
+[13:35:24] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[13:35:24] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[13:35:25] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.52
+[13:35:25] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+17-6e931b2
+[13:35:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:35:25] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.52
+[13:35:25] [Server thread/INFO]:         __    
+[13:35:26] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.52
+[13:35:26] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[13:35:26] [Server thread/INFO]: 
+[13:35:26] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[13:35:26] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[13:35:26] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[13:35:26] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[13:35:26] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1064ms)
+[13:35:26] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[13:35:26] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[13:35:26] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[13:35:26] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[13:35:26] [Server thread/INFO]: Preparing level "world"
+[13:35:27] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[13:35:27] [Server thread/INFO]: Time elapsed: 111 ms
+[13:35:27] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[13:35:27] [Server thread/INFO]: Time elapsed: 26 ms
+[13:35:27] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[13:35:27] [Server thread/INFO]: Time elapsed: 24 ms
+[13:35:27] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+17-6e931b2
+[13:35:28] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[13:35:28] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[13:35:28] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[13:35:28] [Server thread/INFO]: [Essentials] Using locale ru_RU
+[13:35:28] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[13:35:28] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[13:35:28] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
+[13:35:28] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[13:35:28] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[13:35:28] [Server thread/INFO]: Starting remote control listener
+[13:35:28] [Server thread/INFO]: Thread RCON Listener started
+[13:35:28] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[13:35:28] [Server thread/INFO]: Running delayed init tasks
+[13:35:28] [Server thread/INFO]: Done (4.637s)! For help, type "help"
+[13:35:28] [Server thread/INFO]: Timings Reset
+[13:35:28] [Craft Scheduler Thread - 3 - Essentials/INFO]: [Essentials] Получение информации о версии...
+[13:36:20] [Server thread/INFO]: Unknown command. Type "/help" for help.
+[13:37:13] [User Authenticator #0/INFO]: UUID of player G1928 is 13d64ff2-3d59-3907-b079-96b343c8c366
+[13:37:13] [Server thread/INFO]: G1928 joined the game
+[13:37:13] [Server thread/INFO]: G1928[/127.0.0.1:65127] logged in with entity id 175 at ([world]37.84943006681798, 73.42635498658085, -36.52042707149725)
+[13:37:28] [Server thread/INFO]: G1928 issued server command: /warp ocean
+[13:37:32] [Server thread/INFO]: G1928 issued server command: /warp ocean-base
+[13:37:32] [Server thread/WARN]: G1928 moved too quickly! -19.19999998807907,47.50565618587609,35.68598232749957
+[13:49:44] [Server thread/INFO]: G1928 issued server command: /gm 3
+[13:49:47] [Server thread/INFO]: G1928 issued server command: /gm 1
+[13:50:13] [Server thread/INFO]: G1928 issued server command: /gm 3
+[13:50:17] [Server thread/INFO]: G1928 issued server command: /gm 1
+[14:12:26] [Server thread/INFO]: Stopping server
+[14:12:26] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.0-dev+17-6e931b2
+[14:12:26] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.52
+[14:12:26] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[14:12:26] [Server thread/INFO]: [LuckPerms] Closing storage...
+[14:12:26] [Server thread/INFO]: [LuckPerms] Goodbye!
+[14:12:26] [Server thread/INFO]: Saving players
+[14:12:26] [Server thread/INFO]: G1928 lost connection: Server closed
+[14:12:26] [Server thread/INFO]: G1928 left the game
+[14:12:26] [Server thread/INFO]: Saving worlds
+[14:12:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:12:26] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[14:12:26] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[14:12:26] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[14:12:27] [Server thread/INFO]: [ChunkHolderManager] Saved 11 block chunks, 121 entity chunks, 0 poi chunks in world 'world' in 0,04s
+[14:12:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:12:27] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[14:12:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[14:12:27] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[14:12:27] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[14:12:27] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 25 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[14:12:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:12:27] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[14:12:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[14:12:27] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[14:12:27] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[14:12:27] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,01s
+[14:12:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:12:27] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[14:12:27] [Server thread/INFO]: Flushing Chunk IO
+[14:12:27] [Server thread/INFO]: Closing Thread Pool
+[14:12:27] [Server thread/INFO]: Closing Server
