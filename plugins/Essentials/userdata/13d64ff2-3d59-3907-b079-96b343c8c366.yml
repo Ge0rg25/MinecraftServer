@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 212.3.155.232
+ip-address: ''
 afk: false
 socialspy: false
 npc: false
@@ -11,37 +11,19 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1668361046013
+  lastteleport: 0
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1668359575580
-  login: 1668354181712
+  logout: 1668453380680
+  login: 0
 money: '0'
-last-account-name: G1928
-lastlocation:
-  world: c96b8c17-c4be-4364-8d29-d44ceb76c7b4
-  world-name: world
-  x: 467.07148746813345
-  y: 120.16610926093821
-  z: -293.9724197389749
-  yaw: 141.49920654296875
-  pitch: 20.11404037475586
-homes:
-  home:
-    world: c96b8c17-c4be-4364-8d29-d44ceb76c7b4
-    world-name: world
-    x: -55.69829140972919
-    y: 39.0
-    z: -34.83147801644376
-    yaw: 80.2432861328125
-    pitch: 13.050453186035156
 logoutlocation:
-  world: c96b8c17-c4be-4364-8d29-d44ceb76c7b4
+  world: 9fb966bb-e67f-4739-8fc7-56a34eba4d34
   world-name: world
-  x: 28.30000001192093
-  y: 77.88773322447419
-  z: 7.416853011900408
-  yaw: 69.785888671875
-  pitch: 23.235639572143555
+  x: 191.4942688297501
+  y: 64.0
+  z: -61.32168882462084
+  yaw: -128.25816345214844
+  pitch: 13.226020812988281
