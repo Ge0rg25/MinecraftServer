@@ -6333,3 +6333,9 @@ java.lang.IllegalArgumentException: Cannot have null choice
 [16:26:59] [Server thread/WARN]: G1928 moved too quickly! 0.6526526584497105,-2.252203340253729,-9.868430695580386
 [16:27:16] [Server thread/WARN]: G1928 moved too quickly! 2.157026468074946,3.0,-9.437469685519801
 [16:30:10] [Server thread/INFO]: G1928 issued server command: /heal
+[16:40:11] [Server thread/INFO]: G1928 lost connection: Disconnected
+[16:40:11] [Server thread/INFO]: G1928 left the game
+[16:42:52] [User Authenticator #7/INFO]: UUID of player G1928 is 13d64ff2-3d59-3907-b079-96b343c8c366
+[16:42:54] [Server thread/INFO]: G1928 joined the game
+[16:42:54] [Server thread/INFO]: G1928[/127.0.0.1:60229] logged in with entity id 32992 at ([world]647.1414609119843, 54.0, -86.17535757968827)
+[16:43:14] [Server thread/INFO]: G1928 issued server command: /gplug:scuba
