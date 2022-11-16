@@ -1,0 +1,8 @@
+potion:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3120
+  type: POTION
+  meta:
+    ==: ItemMeta
+    meta-type: POTION
+    potion-type: minecraft:water_breathing
